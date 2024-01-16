@@ -25,15 +25,9 @@ async def get_short_link(user, link):
     api_key = user["shortener_api"]
     base_site = user["base_site"]
     print(user)
-    response = requests.get(f"https://{base_site}/api?api={api_key}&url={link}")
+    response = requests.get(f"https://{base_site}/api?api={api_key}&url={link}") 
     else:
-                        logger.error(f"Error: {data['message']}")
-                        return f'https://{URL}/direct_link?api_key={API}&pages=3&link={link}'
-
-        except Exception as e:
-            logger.error(e)
-            return f'{URL}/direct_link?api_key={API}&pages=3&link={link}'
-
+        (f'{URL}/direct_link?api_key={API}&pages=3&link={link}') 
     data = response.json()
     if data["status"] == "success" or rget.status_code == 200:
         return data["shortenedUrl"]
