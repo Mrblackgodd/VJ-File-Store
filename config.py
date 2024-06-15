@@ -84,6 +84,7 @@ class Var(object):
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     NO_PORT = bool(getenv('NO_PORT', False))
+    PYTHON_VERSION = int(getenv('PYTHON_VERSION', '3.10.8')) 
     APP_NAME = None
     if 'DYNO' in environ:
         ON_HEROKU = True
