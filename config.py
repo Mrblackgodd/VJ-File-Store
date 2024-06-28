@@ -95,9 +95,9 @@ class Var(object):
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     HAS_SSL=bool(getenv('HAS_SSL',False))
     if HAS_SSL:
-        URL = "https://google112.onrender.com"
+        URL = "https://purplestreambot-mrblackgod.koyeb.app/"
     else:
-        URL = "https://filestorebypurple.onrender.com/"
+        URL = "https://purplestreambot-mrblackgod.koyeb.app/"
 
 
 
