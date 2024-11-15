@@ -64,7 +64,7 @@ SHORTLINK_URL = environ.get("SHORTLINK_URL", "linkshortify.com") # shortlink dom
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/ezpzsupport/18") # how to open link 
 
 # Website Info:
-WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or False
+WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
 
 # If Website Url Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 WEBSITE_URL = environ.get("WEBSITE_URL", "https://vega-filmy4wapmovies.blogspot.com/2024/07/purplebotz.html") # For More Information Check Video On Yt - @Tech_VJ
@@ -80,7 +80,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://falling-leaf-b5f8.nehal969797.workers.dev/")
+URL = environ.get("URL", "https://purplestreambot-mrblackgod.koyeb.app/")
 
 
 # Don't Remove Credit Tg - @VJ_Botz
